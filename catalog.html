@@ -43,13 +43,13 @@
       <div class="user-wrap">
       <ul class="user-list">
         <li class="user-list-item">
-          <button class="btn-search"></button>
+          <button class="btn-user btn-search"></button>
           <div class="dropdown-search">
              <input type="search" class="dropdown-search__input">
            </div>
         </li>
         <li class="user-list-item">
-          <button class="btn-input">Войти</button>
+          <button class="btn-user btn-input">Войти</button>
           <div class="dropdown-form">
             <input type="email" class="dropdown-form__input" placeholder="Электронная почта">
             <input type="password" class="dropdown-form__input" placeholder="Пароль">
@@ -59,7 +59,7 @@
           </div>
         </li>
         <li class="user-list-item">
-          <button class="btn-basket">Пусто</button>
+          <button class="btn-user btn-basket">Пусто</button>
           <div class="dropdown-table">
             <table class="table">
               <caption class="table-title">Итого: 750 руб.</caption>
@@ -109,8 +109,7 @@
     </div>
     </header>
     <main class="inner">
-    <div class="filters">
-      <ul class="breadcrumbs-list">
+            <ul class="breadcrumbs-list">
         <li class="breadcrumb-item">
           <a href="#" class="breadcrumb__link">Главная</a>
         </li>
@@ -121,18 +120,20 @@
           <a href="#" class="breadcrumb__link">Сливочное</a>
         </li>
       </ul>
-      <h3 class="filter-title">Сливочное мороженое</h3>
+      <h3 class="head-title">Сливочное мороженое</h3>
       <form action="#" class="filter-form">
-        <div class="first-group-filters">
+        <div class="filters-group">
         <fieldset>
           <legend>Сортировка:</legend>
         <select>
           <option>по популярности</option>
+          <option>по цене</option>
+          <option>по новинкам</option>
         </select>
       </fieldset>
       <fieldset>
         <legend>Цена: 100 руб. – 500 руб.</legend>
-      <div class="filter"></div>
+      <input type="range">
     </fieldset>
     <fieldset>
       <legend>Жирность:</legend>
@@ -164,7 +165,7 @@
       </ul>
     </fieldset>
     </div>
-    <div class="second-group-filters">
+    <div class="filters-group">
     <fieldset>
       <legend>Наполнители:</legend>
       <ul>
@@ -200,75 +201,91 @@
         </li>
       </ul>
     </fieldset>
-    <button type="button">Пременить</button>
+    <button type="submit">Применить</button>
   </div>
       </form>
-    </div>
-    <section class="inner-features">
-        <ul class="inner-features-list">
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">310<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+    <section class="features">
+        <ul class="features-list">
+          <li class="features-item">
+            <img src="img/background/feature-img1.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">310<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">380<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочно-кофейное с кусочками шоколада</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img2.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">380<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочно-кофейное с кусочками шоколада</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">355<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img3.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">355<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">415<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочное крем-брюле с карамельной подливкой</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img4.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">415<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочное крем-брюле с карамельной подливкой</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">325<span></span>/кг</h3>
-           <a href="#" class="inner-features-item__link-title">Сливочное с брусничным джемом</a>
-           <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img5.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">325<span></span>/кг</h3>
+           <a href="#" class="features-item__link-title">Сливочное с брусничным джемом</a>
+           <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">410<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочно-черничное с цельными ягодами черники </a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img6.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">410<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочно-черничное с цельными ягодами черники </a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">375<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочно-лимонное с карамельной присыпкой</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img7.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">375<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочно-лимонное с карамельной присыпкой</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">320<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочное с шоколадной стружкой</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img8.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">320<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочное с шоколадной стружкой</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">440<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочно-ванильное с кусочками шоколада</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img9.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">440<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочно-ванильное с кусочками шоколада</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">435<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочноe с ментоловым сиропом</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img10.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">435<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочноe с ментоловым сиропом</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">355<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочное с кусочками черного шоколада</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img11.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">355<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочное с кусочками черного шоколада</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
-          <li class="inner-features-item">
-            <h3 class="inner-features-item__title">420<span></span>/кг</h3>
-            <a href="#" class="inner-features-item__link-title">Сливочное с мятным сиропом</a>
-            <a href="#" class="inner-features-item__view-link">Быстрый просмотр</a>
+          <li class="features-item">
+            <img src="img/background/feature-img12.png" alt="картинка с мороженым" class="features-item__img" width="267" height="267">
+            <h3 class="features-item__title">420<span></span>/кг</h3>
+            <a href="#" class="features-item__link-title">Сливочное с мятным сиропом</a>
+            <a href="#" class="btn features-item__view-link">Быстрый просмотр</a>
           </li>
         </ul>
         <div class="pagination">
           <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-item__link" href="#">
+                <img src="#" alt="предыдущая страница" class="pagination-item__img">
+              </a>
+            </li>
             <li class="pagination-item">
               <a class="pagination-item__link" href="#">1</a>
             </li>
@@ -286,7 +303,7 @@
             </li>
             <li class="pagination-item">
               <a href="#" class="pagination-item__link">
-                <img src="#" alt="ссылка" class="pagination-item__img">
+                <img src="#" alt="следущая страница" class="pagination-item__img">
               </a>
             </li>
           </ul>
@@ -315,7 +332,7 @@
         <a href="#" class="footer-info__link">Экологические стандарты</a>
       </div>
       <div class="copyright">
-        <img src="https://htmlacademy.ru/intensive/htmlcss" alt="логотип" class="copyright__img">
+        <img src="img/icons/logo-htmlacademy-small-1.png" alt="логотип" class="copyright__img" width="108" height="39">
         <p class="copyright__text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </div>
      </footer>
