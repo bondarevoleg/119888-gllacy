@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
     <header class="main-header">
       <div class="nav-wrap">
         <a href="index.html" class="logo-link">
-          <img src="img/logo.svg" alt="логотип" class="logo-link__img" width="154" height="64">
+          <img src="img/icons/logo.svg" alt="Глейси" class="logo-link__img" width="154" height="64">
         </a>
         <nav class="main-nav">
           <ul class="main-nav-list">
@@ -121,7 +123,7 @@
         </li>
       </ul>
       <h3 class="head-title">Сливочное мороженое</h3>
-      <form action="#" class="filter-form">
+      <form action="#" class="filter-form" method="post" action="http://echo.htmlacademy.ru">
         <div class="filters-group">
         <fieldset>
           <legend>Сортировка:</legend>
@@ -133,31 +135,31 @@
       </fieldset>
       <fieldset>
         <legend>Цена: 100 руб. – 500 руб.</legend>
-      <input type="range">
+      <input type="range" class="visually-hidden filter-input-range">
     </fieldset>
     <fieldset>
       <legend>Жирность:</legend>
       <ul>
-        <li>
-          <input type="radio" name="group-fatness" id="to-zero" value="choice-to-zero">
+        <li class="filter-option">
+          <input type="radio" class="visually-hidden filter-input filter-input-radio" name="group-fatness" id="to-zero" value="choice-to-zero">
           <label for="to-zero">
             0%
           </label>
         </li>
-        <li>
-          <input type="radio" name="group-fatness" checked id="to-ten" value="choice-to-ten">
+        <li class="filter-option">
+          <input type="radio" class="visually-hidden filter-input filter-input-radio" name="group-fatness" checked id="to-ten" value="choice-to-ten">
           <label for="to-ten">
             до 10%
           </label>
         </li>
-        <li>
-          <input type="radio" name="group-fatness" id="to-thirty" value="choice-to-thirty">
+        <li class="filter-option">
+          <input type="radio" class="visually-hidden filter-input filter-input-radio" name="group-fatness" id="to-thirty" value="choice-to-thirty">
           <label for="to-thirty">
             до 30%
           </label>
         </li>
-        <li>
-          <input type="radio" name="group-fatness" id="higher-thirty" value="choice-higher-thirty">
+        <li class="filter-option">
+          <input type="radio" class="visually-hidden filter-input filter-input-radio" name="group-fatness" id="higher-thirty" value="choice-higher-thirty">
           <label for="higher-thirty">
             выше30%
           </label>
@@ -169,32 +171,32 @@
     <fieldset>
       <legend>Наполнители:</legend>
       <ul>
-        <li>
-          <input type="checkbox" id="filter-chocolate" name="chocolate">
+        <li class="filter-option">
+          <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-chocolate" name="chocolate">
           <label for="filter-chocolate">
             шоколадные
           </label>
         </li>
-        <li>
-          <input type="checkbox" id="filter-sugar-powder" name="sugar-powder" checked>
+        <li class="filter-option">
+          <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-sugar-powder" name="sugar-powder" checked>
           <label for="filter-sugar-powder">
             сахарные присыпки
           </label>
         </li>
-        <li>
-          <input type="checkbox" id="filter-fruits" name="fruits">
+        <li class="filter-option">
+          <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-fruits" name="fruits">
           <label for="filter-fruits">
             фрукты
           </label>
         </li>
-        <li>
-          <input type="checkbox" id="filter-syrups" name="syrups">
+        <li class="filter-option">
+          <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-syrups" name="syrups">
           <label for="filter-syrups">
             сиропы
           </label>
         </li>
-        <li>
-          <input type="checkbox" id="filter-jams" name="jams">
+        <li class="filter-option">
+          <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" id="filter-jams" name="jams">
           <label for="filter-jams">
             джемы
           </label>
